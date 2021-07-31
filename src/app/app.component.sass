@@ -1,0 +1,147 @@
+$animbg:#f7f148
+$hclr:#FDB827
+$clr:green
+$grclr:#54E346
+$posrel:relative
+$posabs:absolute
+$p4:400px
+$p3:30px
+$sz:50px
+$yellow-color:yellow
+$rel:relative
+$bkclr:black
+$med:300px
+$bleclr:#035397
+$sze:50px
+$whtclr:white
+$ovr:hidden
+$op8:.7
+@mixin textsizes1 
+    font-size: 30px
+
+@mixin bells
+    left:1200px
+    top:-400px
+    
+
+
+@mixin valqu
+    top:80px
+    left:30px
+    font-size:25px
+
+@mixin textsizes2($default-color) 
+    font-size: 40px
+@mixin wid
+    width:200px
+
+@mixin name
+    font-size:25px
+    left:400px
+    top:50px
+@mixin buts
+    left:300px
+    top:20px
+@mixin conani
+    top:100px
+    left:950px
+    border-radius:15px
+    
+
+@mixin namesplip
+    font-size:25px
+    top:20px
+    left:20px
+
+@mixin slid
+    width:300px
+    left:500px
+    
+    
+
+
+.main
+    background-color:$bleclr
+    overflow:$ovr
+
+    h1
+        color:$bkclr
+        font-size:$sz
+        position:$posrel
+        left:$p4
+        top:$p3
+        color:$hclr
+    
+    #ent
+        color:$whtclr
+        opacity:$op8
+
+    .open-close-container  
+        position:$posabs
+        @include conani
+        background-color:$bleclr
+
+        #names
+            @include namesplip
+            position:$posrel
+
+        .valn
+            color:$grclr
+            position:$posrel
+            @include valqu
+           
+
+
+        
+
+    
+    .here
+        @include buts
+        position:$posrel
+            
+             
+
+    .box
+        width: $sze
+        height: $sze
+        background-color:$bleclr
+        position: $rel
+        left:$med
+
+    .content
+        lebel
+        @include name
+        position:$posrel
+
+    .sli
+        position:$posrel
+        @include slid
+
+
+    .sl
+        position:$posrel
+        @include slid
+        color:$whtclr
+        
+
+    fa-icon
+        @include bells
+        color:$whtclr
+        position:$posrel
+
+    .pr 
+        @include bells
+        color:$whtclr
+        position:$posrel
+
+
+
+
+
+    
+
+
+
+
+
+
